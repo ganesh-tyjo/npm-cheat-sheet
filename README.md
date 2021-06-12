@@ -185,11 +185,31 @@ npm install --production
 
 ## Find Root Folder
 
+Globally
+
 ```bash
 npm root -g
 ```
 
+Locally
+
+```bash
+npm root
+```
+
 ## List Packages
+
+Globally
+
+```bash
+npm list -g
+
+npm list -g --depth 0
+
+npm list -g --depth 1
+```
+
+Locally
 
 ```bash
 npm list
@@ -220,14 +240,14 @@ npm run script-name
 
 ## Package Version
 
-Find below, version with different symbols represents in `package.json` file.
+Find below, What package version with different symbols (\*, ~, ^) represents in `package.json` file.
 
-| Version       | Result                                   |
-| ------------- | ---------------------------------------- |
-| "\*"          | Install package with latest version      |
-| "4.17.3"      | Install package with exact version       |
-| "~4.17.**3**" | Install package with latest patch update |
-| "^4.**17.3**" | Install package with latest minor update |
+| Version          | Result                                                                   |
+| ---------------- | ------------------------------------------------------------------------ |
+| "\*"             | Install package with latest version                                      |
+| "4.17.3"         | Install package with exact version                                       |
+| "~4.17.3"        | Install package with latest patch update (Highlighted part gets updated) |
+| "^4.<u>17.3</u>" | Install package with latest minor update (Highlighted part gets updated) |
 
 ```javascript
 "package-name": "^4.17.3"
