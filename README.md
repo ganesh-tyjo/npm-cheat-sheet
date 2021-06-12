@@ -242,12 +242,14 @@ npm run script-name
 
 Find below, What package version with different symbols (\*, ~, ^) represents in `package.json` file.
 
-| Version          | Result                                                                   |
-| ---------------- | ------------------------------------------------------------------------ |
-| "\*"             | Install package with latest version                                      |
-| "4.17.3"         | Install package with exact version                                       |
-| "~4.17.3"        | Install package with latest patch update (Highlighted part gets updated) |
-| "^4.<u>17.3</u>" | Install package with latest minor update (Highlighted part gets updated) |
+| Version         | Result                                                                   |
+| --------------- | ------------------------------------------------------------------------ |
+| "\*"            | Install package with latest version                                      |
+| "4.17.3"        | Install package with exact version                                       |
+| "~4.17.**`3`**" | Install package with latest patch update (Highlighted part gets updated) |
+| "^4.**`17.3`**" | Install package with latest minor update (Highlighted part gets updated) |
+
+Most Preferred
 
 ```javascript
 "package-name": "^4.17.3"
