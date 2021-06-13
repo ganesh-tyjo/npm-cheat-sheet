@@ -17,6 +17,10 @@
 
 ---
 
+This cheat sheet includes commands which will help you while using NPM packages and modules.
+Don't worry about remembering all these NPM commands, Take a look at this cheat sheet whenever required.:wink:
+Now go ahead and create something awesome.:sunglasses:
+
 <br />
 <details open="open">
   <summary><strong>Table of Contents</strong></summary>
@@ -60,6 +64,7 @@ npm help
 ```bash
 npm init
 
+# Below commands will create package.json file with default values
 npm init -y
 
 npm init --yes
@@ -171,6 +176,9 @@ npm uninstall --save-dev package-name
 
 ## Move to Another Folder
 
+NPM stores installed packages inside `node_modules` folder.
+Most people usually doesn't share `node_modules` folder along with their code, because you can easily install all the NPM packages they have used using below commands.
+
 Install production and development dependencies.
 
 ```bash
@@ -233,6 +241,7 @@ Define scripts in `package.json` file.
 Run scripts
 
 ```bash
+# Only "start" script will execute without run command
 npm start
 
 npm run script-name
